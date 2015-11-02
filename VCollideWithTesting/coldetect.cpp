@@ -65,7 +65,7 @@ bool ColDetect::coldetect(int ntri1, int ntri2, int ntrans1, int ntrans2, double
 	return false;
 }
 
-bool ColDetect::coldetect(Triangle3D* tri1, Triangle3D* tri2) {
+bool ColDetect::coldetect(Triangle3D* tri1, Triangle3D* tri2) {//wrapper, so I would not have to deal with arrays
 	int ntri1 = 1;	//number of rows in first array (one row for one Triangle, propably)
 	int ntri2 = 1;
 	int ntrans1 = 1;	//number of rows for transformation matrix
