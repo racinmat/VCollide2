@@ -67,9 +67,9 @@ bool ColDetect::coldetect(int ntri1, int ntri2, int ntrans1, int ntrans2, double
 
 bool ColDetect::coldetect(Triangle3D* tri1, Triangle3D* tri2) {//wrapper, so I would not have to deal with arrays
 	int ntri1 = 1;	//number of rows in first array (one row for one Triangle, propably)
-	int ntri2 = 1;
+	int ntri2 = 1;	//number of rows in second array (one row for one Triangle, propably)
 	int ntrans1 = 1;	//number of rows for transformation matrix
-	int ntrans2 = 1;
+	int ntrans2 = 1;	//number of rows for transformation matrix
 	double zeroTrans[] = { 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 1 }; //pøevzato od Petrlíka, nechápu, k èemu se tam ta matice používá
 	std::vector<double> tri1vector = tri1->toVector();
 	std::vector<double> tri2vector = tri2->toVector();
